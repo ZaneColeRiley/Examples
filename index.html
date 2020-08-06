@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome</title>
+        <link rel="stylesheet" type="text/css" href="static/welcome.css?version=39">
+    </head>
+    <body class="content">
+        <header class="nav">
+            <div>
+                <p class="author">Caden Smith</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('welcome') }}" class="active">Welcome</a></li>
+                    <li><a href="{{ url_for('about') }}">About Me</a></li>
+                    <li><a href="{{ url_for('knowledge') }}">Knowledge</a></li>
+                    <li><a href="{{ url_for('experience') }}">Experience</a></li>
+                    <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="title">
+            <div>
+                <h3 class="page-title">Welcome</h3>
+            </div>
+        </section>
+
+        <section class="welcome-summary">
+            <h4 class="summary">Summary</h4>
+            <article>
+                <div>
+                    <p>Welcome, here on this portfolio I have put <br>
+                    together is my skills, knowledge, experience,<br>
+                    projects, and contact information plus a little about me.<br>
+                    My first Programing language I learned is python and since <br>
+                    learning it I have gone on to learn Java, SQL and html and css.<br><br></p>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <p>One of my most proud Projects is Archer it is over <br>
+                        1000 lines of code with many functions. for example it <br>
+                        requires you to login in in order to use, allows you<br>
+                        to see the current weather and commit it to a mysql data base.<br><br></p>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <p>I have have created a simple email app using python als well as GUI <br>
+                    for an app that adds peoples names, job address as well for their contact information.
+                        <br> I am well versed in many python modules and can unitize apis for projects.<br><br></p>
+                </div>
+            </article>
+        </section>
+    </body>
+</html>
